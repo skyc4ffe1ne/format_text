@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "format Text",
+  "version": "1.0",
+  "description": "lorem ipsum..",
+  "browser_action": {
+    "default_title": "Format Text"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://course.ccs.neu.edu/cs2510sp22/*"
+      ],
+      "js": [
+        "./content_scripts/copy.js"
+      ]
+    }
+  ]
+}
